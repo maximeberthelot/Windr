@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9A2959A1C1F2C490027C2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A295991C1F2C490027C2F7 /* AppDelegate.swift */; };
+		F9A2959C1C1F2C490027C2F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2959B1C1F2C490027C2F7 /* ViewController.swift */; };
+		F9A2959F1C1F2C490027C2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A2959D1C1F2C490027C2F7 /* Main.storyboard */; };
+		F9A295A21C1F2C490027C2F7 /* Wandr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9A295A01C1F2C490027C2F7 /* Wandr.xcdatamodeld */; };
+		F9A295A41C1F2C490027C2F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A295A31C1F2C490027C2F7 /* Assets.xcassets */; };
+		F9A295A71C1F2C490027C2F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A295A51C1F2C490027C2F7 /* LaunchScreen.storyboard */; };
+		F9A295B21C1F2C490027C2F7 /* WandrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A295B11C1F2C490027C2F7 /* WandrTests.swift */; };
+		F9A295BD1C1F2C490027C2F7 /* WandrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A295BC1C1F2C490027C2F7 /* WandrUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9A295AE1C1F2C490027C2F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9A2958E1C1F2C490027C2F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9A295951C1F2C490027C2F7;
+			remoteInfo = Wandr;
+		};
+		F9A295B91C1F2C490027C2F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9A2958E1C1F2C490027C2F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9A295951C1F2C490027C2F7;
+			remoteInfo = Wandr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F9A295961C1F2C490027C2F7 /* Wandr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wandr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A295991C1F2C490027C2F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9A2959B1C1F2C490027C2F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9A2959E1C1F2C490027C2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9A295A11C1F2C490027C2F7 /* Wandr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wandr.xcdatamodel; sourceTree = "<group>"; };
+		F9A295A31C1F2C490027C2F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9A295A61C1F2C490027C2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F9A295A81C1F2C490027C2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A295AD1C1F2C490027C2F7 /* WandrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WandrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A295B11C1F2C490027C2F7 /* WandrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandrTests.swift; sourceTree = "<group>"; };
+		F9A295B31C1F2C490027C2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9A295B81C1F2C490027C2F7 /* WandrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WandrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9A295BC1C1F2C490027C2F7 /* WandrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandrUITests.swift; sourceTree = "<group>"; };
+		F9A295BE1C1F2C490027C2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9A295931C1F2C490027C2F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A295AA1C1F2C490027C2F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A295B51C1F2C490027C2F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9A2958D1C1F2C490027C2F7 = {
+			isa = PBXGroup;
+			children = (
+				F9A295981C1F2C490027C2F7 /* Wandr */,
+				F9A295B01C1F2C490027C2F7 /* WandrTests */,
+				F9A295BB1C1F2C490027C2F7 /* WandrUITests */,
+				F9A295971C1F2C490027C2F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9A295971C1F2C490027C2F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9A295961C1F2C490027C2F7 /* Wandr.app */,
+				F9A295AD1C1F2C490027C2F7 /* WandrTests.xctest */,
+				F9A295B81C1F2C490027C2F7 /* WandrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9A295981C1F2C490027C2F7 /* Wandr */ = {
+			isa = PBXGroup;
+			children = (
+				F9A295991C1F2C490027C2F7 /* AppDelegate.swift */,
+				F9A2959B1C1F2C490027C2F7 /* ViewController.swift */,
+				F9A2959D1C1F2C490027C2F7 /* Main.storyboard */,
+				F9A295A31C1F2C490027C2F7 /* Assets.xcassets */,
+				F9A295A51C1F2C490027C2F7 /* LaunchScreen.storyboard */,
+				F9A295A81C1F2C490027C2F7 /* Info.plist */,
+				F9A295A01C1F2C490027C2F7 /* Wandr.xcdatamodeld */,
+			);
+			path = Wandr;
+			sourceTree = "<group>";
+		};
+		F9A295B01C1F2C490027C2F7 /* WandrTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9A295B11C1F2C490027C2F7 /* WandrTests.swift */,
+				F9A295B31C1F2C490027C2F7 /* Info.plist */,
+			);
+			path = WandrTests;
+			sourceTree = "<group>";
+		};
+		F9A295BB1C1F2C490027C2F7 /* WandrUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9A295BC1C1F2C490027C2F7 /* WandrUITests.swift */,
+				F9A295BE1C1F2C490027C2F7 /* Info.plist */,
+			);
+			path = WandrUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9A295951C1F2C490027C2F7 /* Wandr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A295C11C1F2C490027C2F7 /* Build configuration list for PBXNativeTarget "Wandr" */;
+			buildPhases = (
+				F9A295921C1F2C490027C2F7 /* Sources */,
+				F9A295931C1F2C490027C2F7 /* Frameworks */,
+				F9A295941C1F2C490027C2F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Wandr;
+			productName = Wandr;
+			productReference = F9A295961C1F2C490027C2F7 /* Wandr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9A295AC1C1F2C490027C2F7 /* WandrTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A295C41C1F2C490027C2F7 /* Build configuration list for PBXNativeTarget "WandrTests" */;
+			buildPhases = (
+				F9A295A91C1F2C490027C2F7 /* Sources */,
+				F9A295AA1C1F2C490027C2F7 /* Frameworks */,
+				F9A295AB1C1F2C490027C2F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9A295AF1C1F2C490027C2F7 /* PBXTargetDependency */,
+			);
+			name = WandrTests;
+			productName = WandrTests;
+			productReference = F9A295AD1C1F2C490027C2F7 /* WandrTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9A295B71C1F2C490027C2F7 /* WandrUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A295C71C1F2C490027C2F7 /* Build configuration list for PBXNativeTarget "WandrUITests" */;
+			buildPhases = (
+				F9A295B41C1F2C490027C2F7 /* Sources */,
+				F9A295B51C1F2C490027C2F7 /* Frameworks */,
+				F9A295B61C1F2C490027C2F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9A295BA1C1F2C490027C2F7 /* PBXTargetDependency */,
+			);
+			name = WandrUITests;
+			productName = WandrUITests;
+			productReference = F9A295B81C1F2C490027C2F7 /* WandrUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9A2958E1C1F2C490027C2F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Maxime Berthelot";
+				TargetAttributes = {
+					F9A295951C1F2C490027C2F7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					F9A295AC1C1F2C490027C2F7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = F9A295951C1F2C490027C2F7;
+					};
+					F9A295B71C1F2C490027C2F7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = F9A295951C1F2C490027C2F7;
+					};
+				};
+			};
+			buildConfigurationList = F9A295911C1F2C490027C2F7 /* Build configuration list for PBXProject "Wandr" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9A2958D1C1F2C490027C2F7;
+			productRefGroup = F9A295971C1F2C490027C2F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9A295951C1F2C490027C2F7 /* Wandr */,
+				F9A295AC1C1F2C490027C2F7 /* WandrTests */,
+				F9A295B71C1F2C490027C2F7 /* WandrUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9A295941C1F2C490027C2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A295A71C1F2C490027C2F7 /* LaunchScreen.storyboard in Resources */,
+				F9A295A41C1F2C490027C2F7 /* Assets.xcassets in Resources */,
+				F9A2959F1C1F2C490027C2F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A295AB1C1F2C490027C2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A295B61C1F2C490027C2F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9A295921C1F2C490027C2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A2959C1C1F2C490027C2F7 /* ViewController.swift in Sources */,
+				F9A295A21C1F2C490027C2F7 /* Wandr.xcdatamodeld in Sources */,
+				F9A2959A1C1F2C490027C2F7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A295A91C1F2C490027C2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A295B21C1F2C490027C2F7 /* WandrTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9A295B41C1F2C490027C2F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9A295BD1C1F2C490027C2F7 /* WandrUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9A295AF1C1F2C490027C2F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9A295951C1F2C490027C2F7 /* Wandr */;
+			targetProxy = F9A295AE1C1F2C490027C2F7 /* PBXContainerItemProxy */;
+		};
+		F9A295BA1C1F2C490027C2F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9A295951C1F2C490027C2F7 /* Wandr */;
+			targetProxy = F9A295B91C1F2C490027C2F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9A2959D1C1F2C490027C2F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9A2959E1C1F2C490027C2F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F9A295A51C1F2C490027C2F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9A295A61C1F2C490027C2F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9A295BF1C1F2C490027C2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9A295C01C1F2C490027C2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9A295C21C1F2C490027C2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Wandr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = random.Wandr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F9A295C31C1F2C490027C2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Wandr/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = random.Wandr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F9A295C51C1F2C490027C2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WandrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = random.WandrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wandr.app/Wandr";
+			};
+			name = Debug;
+		};
+		F9A295C61C1F2C490027C2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WandrTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = random.WandrTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wandr.app/Wandr";
+			};
+			name = Release;
+		};
+		F9A295C81C1F2C490027C2F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WandrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = random.WandrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Wandr;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F9A295C91C1F2C490027C2F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WandrUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = random.WandrUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Wandr;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9A295911C1F2C490027C2F7 /* Build configuration list for PBXProject "Wandr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A295BF1C1F2C490027C2F7 /* Debug */,
+				F9A295C01C1F2C490027C2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A295C11C1F2C490027C2F7 /* Build configuration list for PBXNativeTarget "Wandr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A295C21C1F2C490027C2F7 /* Debug */,
+				F9A295C31C1F2C490027C2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F9A295C41C1F2C490027C2F7 /* Build configuration list for PBXNativeTarget "WandrTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A295C51C1F2C490027C2F7 /* Debug */,
+				F9A295C61C1F2C490027C2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F9A295C71C1F2C490027C2F7 /* Build configuration list for PBXNativeTarget "WandrUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A295C81C1F2C490027C2F7 /* Debug */,
+				F9A295C91C1F2C490027C2F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F9A295A01C1F2C490027C2F7 /* Wandr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F9A295A11C1F2C490027C2F7 /* Wandr.xcdatamodel */,
+			);
+			currentVersion = F9A295A11C1F2C490027C2F7 /* Wandr.xcdatamodel */;
+			path = Wandr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F9A2958E1C1F2C490027C2F7 /* Project object */;
+}
