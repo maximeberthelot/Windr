@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1245BFF514E108F44BE765E8 /* Pods_Wandr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282E41D1B89E34C34014D8BB /* Pods_Wandr.framework */; };
+		F92AB12F1C20E014008D0B5B /* LoginDefaultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92AB12E1C20E014008D0B5B /* LoginDefaultController.swift */; };
+		F92AB1311C20E031008D0B5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92AB1301C20E031008D0B5B /* LoginViewController.swift */; };
+		F95219B31C206BFA00D675EC /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95219B21C206BFA00D675EC /* LoginTextField.swift */; };
+		F95219B51C2079D600D675EC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95219B41C2079D600D675EC /* UserModel.swift */; };
+		F99696F51C20F89A00B9C697 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99696F41C20F89A00B9C697 /* TinderViewController.swift */; };
+		F99696F71C20F91500B9C697 /* ZLSwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99696F61C20F91500B9C697 /* ZLSwipeableView.swift */; };
+		F99696F91C20F99E00B9C697 /* ZLSwipeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99696F81C20F99E00B9C697 /* ZLSwipeableViewController.swift */; };
+		F99696FC1C20FACE00B9C697 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99696FA1C20FACE00B9C697 /* CardView.swift */; };
+		F99696FD1C20FACE00B9C697 /* CardContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F99696FB1C20FACE00B9C697 /* CardContentView.xib */; };
 		F9A2959A1C1F2C490027C2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A295991C1F2C490027C2F7 /* AppDelegate.swift */; };
-		F9A2959C1C1F2C490027C2F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A2959B1C1F2C490027C2F7 /* ViewController.swift */; };
-		F9A2959F1C1F2C490027C2F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A2959D1C1F2C490027C2F7 /* Main.storyboard */; };
 		F9A295A21C1F2C490027C2F7 /* Wandr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9A295A01C1F2C490027C2F7 /* Wandr.xcdatamodeld */; };
-		F9A295A41C1F2C490027C2F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9A295A31C1F2C490027C2F7 /* Assets.xcassets */; };
 		F9A295A71C1F2C490027C2F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9A295A51C1F2C490027C2F7 /* LaunchScreen.storyboard */; };
 		F9A295B21C1F2C490027C2F7 /* WandrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A295B11C1F2C490027C2F7 /* WandrTests.swift */; };
 		F9A295BD1C1F2C490027C2F7 /* WandrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A295BC1C1F2C490027C2F7 /* WandrUITests.swift */; };
+		F9AB43CF1C20973E00FCDDE8 /* ConfigGlobalProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AB43CE1C20973E00FCDDE8 /* ConfigGlobalProject.swift */; };
+		F9B8A9081C20B86300799442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B8A9071C20B86300799442 /* Main.storyboard */; };
+		F9B8A90A1C20BB4400799442 /* RightSigue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B8A9091C20BB4400799442 /* RightSigue.swift */; };
+		F9E6AD041C1FA8E400825E5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E6AD021C1FA8E400825E5B /* MapViewController.swift */; };
+		F9E6AD0F1C20375300825E5B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E6AD0E1C20375300825E5B /* RegisterViewController.swift */; };
+		F9E6AD2E1C2047AE00825E5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E6AD2D1C2047AE00825E5B /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +48,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		282E41D1B89E34C34014D8BB /* Pods_Wandr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wandr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DF3D0311202FCAF91A65F5 /* Pods-Wandr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wandr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wandr/Pods-Wandr.release.xcconfig"; sourceTree = "<group>"; };
+		D6568550DBC1BFF7230CF6A1 /* Pods-Wandr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wandr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wandr/Pods-Wandr.debug.xcconfig"; sourceTree = "<group>"; };
+		F92AB12E1C20E014008D0B5B /* LoginDefaultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDefaultController.swift; sourceTree = "<group>"; };
+		F92AB1301C20E031008D0B5B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F95219B21C206BFA00D675EC /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		F95219B41C2079D600D675EC /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F99696F41C20F89A00B9C697 /* TinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
+		F99696F61C20F91500B9C697 /* ZLSwipeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwipeableView.swift; sourceTree = "<group>"; };
+		F99696F81C20F99E00B9C697 /* ZLSwipeableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwipeableViewController.swift; sourceTree = "<group>"; };
+		F99696FA1C20FACE00B9C697 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		F99696FB1C20FACE00B9C697 /* CardContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardContentView.xib; sourceTree = "<group>"; };
 		F9A295961C1F2C490027C2F7 /* Wandr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wandr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A295991C1F2C490027C2F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9A2959B1C1F2C490027C2F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F9A2959E1C1F2C490027C2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9A295A11C1F2C490027C2F7 /* Wandr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wandr.xcdatamodel; sourceTree = "<group>"; };
-		F9A295A31C1F2C490027C2F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9A295A61C1F2C490027C2F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9A295A81C1F2C490027C2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9A295AD1C1F2C490027C2F7 /* WandrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WandrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +71,13 @@
 		F9A295B81C1F2C490027C2F7 /* WandrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WandrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9A295BC1C1F2C490027C2F7 /* WandrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WandrUITests.swift; sourceTree = "<group>"; };
 		F9A295BE1C1F2C490027C2F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9AB43CE1C20973E00FCDDE8 /* ConfigGlobalProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigGlobalProject.swift; sourceTree = "<group>"; };
+		F9B15AFF1C2057DD00AE2A78 /* Bridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		F9B8A9071C20B86300799442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F9B8A9091C20BB4400799442 /* RightSigue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightSigue.swift; sourceTree = "<group>"; };
+		F9E6AD021C1FA8E400825E5B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F9E6AD0E1C20375300825E5B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F9E6AD2D1C2047AE00825E5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1245BFF514E108F44BE765E8 /* Pods_Wandr.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +106,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		177C2060E38A067BCF7193AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6568550DBC1BFF7230CF6A1 /* Pods-Wandr.debug.xcconfig */,
+				95DF3D0311202FCAF91A65F5 /* Pods-Wandr.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E38334594FB71F2678188719 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				282E41D1B89E34C34014D8BB /* Pods_Wandr.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F919F56A1C1F9D130018A425 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F99696FB1C20FACE00B9C697 /* CardContentView.xib */,
+				F9B8A9071C20B86300799442 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F919F56B1C1F9D250018A425 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F95219B41C2079D600D675EC /* UserModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F919F56C1C1F9D3A0018A425 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F99696FA1C20FACE00B9C697 /* CardView.swift */,
+				F9E6AD021C1FA8E400825E5B /* MapViewController.swift */,
+				F9E6AD0E1C20375300825E5B /* RegisterViewController.swift */,
+				F99696F41C20F89A00B9C697 /* TinderViewController.swift */,
+				F92AB1301C20E031008D0B5B /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F95219B11C206BBE00D675EC /* ui-helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F99696FE1C21001800B9C697 /* ZL */,
+				F92AB12E1C20E014008D0B5B /* LoginDefaultController.swift */,
+				F95219B21C206BFA00D675EC /* LoginTextField.swift */,
+				F9B8A9091C20BB4400799442 /* RightSigue.swift */,
+			);
+			name = "ui-helpers";
+			sourceTree = "<group>";
+		};
+		F99696FE1C21001800B9C697 /* ZL */ = {
+			isa = PBXGroup;
+			children = (
+				F99696F81C20F99E00B9C697 /* ZLSwipeableViewController.swift */,
+				F99696F61C20F91500B9C697 /* ZLSwipeableView.swift */,
+			);
+			name = ZL;
+			sourceTree = "<group>";
+		};
 		F9A2958D1C1F2C490027C2F7 = {
 			isa = PBXGroup;
 			children = (
+				F9B15AFF1C2057DD00AE2A78 /* Bridge-Header.h */,
 				F9A295981C1F2C490027C2F7 /* Wandr */,
 				F9A295B01C1F2C490027C2F7 /* WandrTests */,
 				F9A295BB1C1F2C490027C2F7 /* WandrUITests */,
 				F9A295971C1F2C490027C2F7 /* Products */,
+				177C2060E38A067BCF7193AA /* Pods */,
+				E38334594FB71F2678188719 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +198,13 @@
 		F9A295981C1F2C490027C2F7 /* Wandr */ = {
 			isa = PBXGroup;
 			children = (
-				F9A295991C1F2C490027C2F7 /* AppDelegate.swift */,
-				F9A2959B1C1F2C490027C2F7 /* ViewController.swift */,
-				F9A2959D1C1F2C490027C2F7 /* Main.storyboard */,
-				F9A295A31C1F2C490027C2F7 /* Assets.xcassets */,
-				F9A295A51C1F2C490027C2F7 /* LaunchScreen.storyboard */,
-				F9A295A81C1F2C490027C2F7 /* Info.plist */,
-				F9A295A01C1F2C490027C2F7 /* Wandr.xcdatamodeld */,
+				F95219B11C206BBE00D675EC /* ui-helpers */,
+				F9E6AD2D1C2047AE00825E5B /* Assets.xcassets */,
+				F9E6AD111C203BB300825E5B /* Config */,
+				F9E6AD101C203BA200825E5B /* App */,
+				F919F56C1C1F9D3A0018A425 /* Controllers */,
+				F919F56B1C1F9D250018A425 /* Models */,
+				F919F56A1C1F9D130018A425 /* Views */,
 			);
 			path = Wandr;
 			sourceTree = "<group>";
@@ -128,6 +227,25 @@
 			path = WandrUITests;
 			sourceTree = "<group>";
 		};
+		F9E6AD101C203BA200825E5B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F9A295A51C1F2C490027C2F7 /* LaunchScreen.storyboard */,
+				F9A295991C1F2C490027C2F7 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		F9E6AD111C203BB300825E5B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F9A295A01C1F2C490027C2F7 /* Wandr.xcdatamodeld */,
+				F9A295A81C1F2C490027C2F7 /* Info.plist */,
+				F9AB43CE1C20973E00FCDDE8 /* ConfigGlobalProject.swift */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9A295C11C1F2C490027C2F7 /* Build configuration list for PBXNativeTarget "Wandr" */;
 			buildPhases = (
+				F33AF1ED278E814465CBA21A /* Check Pods Manifest.lock */,
 				F9A295921C1F2C490027C2F7 /* Sources */,
 				F9A295931C1F2C490027C2F7 /* Frameworks */,
 				F9A295941C1F2C490027C2F7 /* Resources */,
+				18C5BF7A77701A9C2A2112DB /* Embed Pods Frameworks */,
+				FE01E8C0A44BA84E3ADF4640 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +317,7 @@
 				TargetAttributes = {
 					F9A295951C1F2C490027C2F7 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4D52EW242H;
 					};
 					F9A295AC1C1F2C490027C2F7 = {
 						CreatedOnToolsVersion = 7.2;
@@ -232,9 +354,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F99696FD1C20FACE00B9C697 /* CardContentView.xib in Resources */,
 				F9A295A71C1F2C490027C2F7 /* LaunchScreen.storyboard in Resources */,
-				F9A295A41C1F2C490027C2F7 /* Assets.xcassets in Resources */,
-				F9A2959F1C1F2C490027C2F7 /* Main.storyboard in Resources */,
+				F9E6AD2E1C2047AE00825E5B /* Assets.xcassets in Resources */,
+				F9B8A9081C20B86300799442 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +377,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18C5BF7A77701A9C2A2112DB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wandr/Pods-Wandr-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F33AF1ED278E814465CBA21A /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE01E8C0A44BA84E3ADF4640 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wandr/Pods-Wandr-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9A295921C1F2C490027C2F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A2959C1C1F2C490027C2F7 /* ViewController.swift in Sources */,
+				F99696FC1C20FACE00B9C697 /* CardView.swift in Sources */,
+				F95219B31C206BFA00D675EC /* LoginTextField.swift in Sources */,
+				F99696F71C20F91500B9C697 /* ZLSwipeableView.swift in Sources */,
+				F95219B51C2079D600D675EC /* UserModel.swift in Sources */,
+				F9AB43CF1C20973E00FCDDE8 /* ConfigGlobalProject.swift in Sources */,
 				F9A295A21C1F2C490027C2F7 /* Wandr.xcdatamodeld in Sources */,
+				F99696F51C20F89A00B9C697 /* TinderViewController.swift in Sources */,
+				F9E6AD0F1C20375300825E5B /* RegisterViewController.swift in Sources */,
+				F92AB12F1C20E014008D0B5B /* LoginDefaultController.swift in Sources */,
+				F99696F91C20F99E00B9C697 /* ZLSwipeableViewController.swift in Sources */,
 				F9A2959A1C1F2C490027C2F7 /* AppDelegate.swift in Sources */,
+				F9E6AD041C1FA8E400825E5B /* MapViewController.swift in Sources */,
+				F92AB1311C20E031008D0B5B /* LoginViewController.swift in Sources */,
+				F9B8A90A1C20BB4400799442 /* RightSigue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +479,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F9A2959D1C1F2C490027C2F7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F9A2959E1C1F2C490027C2F7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F9A295A51C1F2C490027C2F7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -399,23 +573,37 @@
 		};
 		F9A295C21C1F2C490027C2F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6568550DBC1BFF7230CF6A1 /* Pods-Wandr.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = Wandr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = random.Wandr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridge-Header.h";
 			};
 			name = Debug;
 		};
 		F9A295C31C1F2C490027C2F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95DF3D0311202FCAF91A65F5 /* Pods-Wandr.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = Wandr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = random.Wandr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridge-Header.h";
 			};
 			name = Release;
 		};
@@ -486,6 +674,7 @@
 				F9A295C31C1F2C490027C2F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9A295C41C1F2C490027C2F7 /* Build configuration list for PBXNativeTarget "WandrTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +683,7 @@
 				F9A295C61C1F2C490027C2F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9A295C71C1F2C490027C2F7 /* Build configuration list for PBXNativeTarget "WandrUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +692,7 @@
 				F9A295C91C1F2C490027C2F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
