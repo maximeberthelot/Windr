@@ -10,6 +10,7 @@
 #define Bridge_Header_h
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "SWRevealViewController.h"
 
 
 #endif /* Bridge_Header_h */

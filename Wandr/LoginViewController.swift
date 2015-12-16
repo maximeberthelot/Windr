@@ -30,12 +30,13 @@ class LoginViewController: LoginDefaultController, FBSDKLoginButtonDelegate{
     
     override func viewDidAppear(animated: Bool) {
         
+        print(Locksmith.loadDataForUserAccount("currentUser"))
+        
         if((Locksmith.loadDataForUserAccount("currentUser")) != nil){
-            if(modeDEV){
-                print(Locksmith.loadDataForUserAccount("myUserAccount"))
-            }
             
             self.switchView()
+            return
+        
         }
         
         if (FBSDKAccessToken.currentAccessToken() == nil){
@@ -46,6 +47,7 @@ class LoginViewController: LoginDefaultController, FBSDKLoginButtonDelegate{
         }
     }
     
+    //-----o Config FB & methode
     
     func setFBBtn(){
         

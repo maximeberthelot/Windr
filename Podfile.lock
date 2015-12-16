@@ -18,6 +18,7 @@ PODS:
     - FBSDKCoreKit/arc
   - FBSDKLoginKit (4.8.0):
     - FBSDKCoreKit
+  - IQDropDownTextField (1.0.7)
   - Locksmith (2.0.2)
   - performSelector-swift (0.1.0)
   - ReactiveUI (0.0.3)
@@ -30,6 +31,7 @@ DEPENDENCIES:
   - Cartography
   - FBSDKCoreKit
   - FBSDKLoginKit
+  - IQDropDownTextField
   - Locksmith
   - performSelector-swift
   - ReactiveUI
@@ -53,6 +55,7 @@ SPEC CHECKSUMS:
   Cartography: 70af183a248547694a8cfaa6b989cb7e04589985
   FBSDKCoreKit: 66a935d17b6e00b6b64e604f2eb9b72c9ab7deb8
   FBSDKLoginKit: d893fcbb98d854496925e9ff73c67b896982d3c4
+  IQDropDownTextField: a16c12513f1b28a30aa76c00b2f37b00ecc31b0a
   Locksmith: 7f2b68448449a7712348f9a4ed60604c1cc8dfa6
   performSelector-swift: 676d3dab420ed7e1505a7cdaf35e5741509cdd3c
   ReactiveUI: 05d1f5d884e5a2496a2cd2ac6c0ed35ab0218c02
