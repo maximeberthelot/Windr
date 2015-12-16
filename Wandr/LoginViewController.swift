@@ -30,12 +30,13 @@ class LoginViewController: LoginDefaultController, FBSDKLoginButtonDelegate{
     
     override func viewDidAppear(animated: Bool) {
         
-        print(Locksmith.loadDataForUserAccount("currentUser"))
-        
         if((Locksmith.loadDataForUserAccount("currentUser")) != nil){
             
-            self.switchView()
+            try! Locksmith.deleteDataForUserAccount("currentUser")
             return
+                
+            //self.switchView()
+            //return
         
         }
         

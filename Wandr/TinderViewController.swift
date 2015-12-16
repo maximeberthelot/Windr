@@ -12,6 +12,7 @@ import ReactiveUI
 class TinderViewController: ZLSwipeableViewController {
     
     var shouldSwipe = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,6 +20,10 @@ class TinderViewController: ZLSwipeableViewController {
         swipeableView.shouldSwipeView = {(view: UIView, movement: Movement, swipeableView: ZLSwipeableView) in
             self.shouldSwipe && defaultHandler(view: view, movement: movement, swipeableView: swipeableView)
         }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        print(checkpointsData[0])
     }
     
 }

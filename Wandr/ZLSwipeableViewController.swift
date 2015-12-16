@@ -12,10 +12,8 @@ import UIColor_FlatColors
 import Cartography
 import ReactiveUI
 
-var cardCounter = 0
-
 class ZLSwipeableViewController: UIViewController {
-
+    
     var swipeableView: ZLSwipeableView!
     
     var colors = ["Turquoise", "Green Sea", "Emerald"]
@@ -68,10 +66,10 @@ class ZLSwipeableViewController: UIViewController {
         }
 
         let cardView = CardView(frame: swipeableView.bounds)
-        cardView.backgroundColor = colorForName(colors[colorIndex])
-        colorIndex++
+        cardView.backgroundColor = UIColor.whiteColor()
 
         if loadCardsFromXib {
+            
             let contentView = NSBundle.mainBundle().loadNibNamed("CardContentView", owner: self, options: nil).first! as! UIView
             contentView.translatesAutoresizingMaskIntoConstraints = false
             contentView.backgroundColor = cardView.backgroundColor
@@ -85,12 +83,6 @@ class ZLSwipeableViewController: UIViewController {
             }
         }
         return cardView
-    }
-
-    func colorForName(name: String) -> UIColor {
-        let sanitizedName = name.stringByReplacingOccurrencesOfString(" ", withString: "")
-        let selector = "flat\(sanitizedName)Color"
-        return UIColor.swift_performSelector(Selector(selector), withObject: nil) as! UIColor
     }
 }
 

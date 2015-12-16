@@ -8,15 +8,18 @@
 import Foundation
 import MapKit
 import CoreLocation
+import Locksmith
 
 class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapViewDelegate, CLLocationManagerDelegate, UIPickerViewDelegate, UITextFieldDelegate {
     
     @IBOutlet var timeTextField: UITextField!
     
     var isKeyboardIsOpen = false
-    var currentColumn = 0
+    var timeMinute = 15
     var isBike = true
     var isSpeed = false
+    var isFinished = true
+    var ll = ""
     
     @IBOutlet var mapViewUI: MKMapView!
     let locationManager = CLLocationManager()
@@ -81,7 +84,7 @@ class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapVie
         //----o Init with default el
         self.switchBtnColorFoot()
         self.switchBtnColorSpeed()
-
+        
     }
     
     
@@ -185,7 +188,7 @@ class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapVie
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        currentColumn = timeConvert[row]
+        timeMinute = timeConvert[row]
         timeTextField.text = pickerDataSource[row]
     
     }
@@ -201,6 +204,9 @@ class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapVie
         self.mapViewUI.setRegion(region, animated: true)
         
         self.locationManager.stopUpdatingLocation()
+        
+        ll = "\(location!.coordinate.latitude),\(location!.coordinate.longitude)"
+        
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
@@ -214,7 +220,7 @@ class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapVie
     func keyboardWillShow(sender: NSNotification) {
         
         if(!isKeyboardIsOpen){
-            self.view.frame.origin.y -= 150
+            self.view.frame.origin.y -= 180
             isKeyboardIsOpen = true
         }
         
@@ -223,7 +229,7 @@ class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapVie
     func keyboardWillHide(sender: NSNotification) {
         
         if(isKeyboardIsOpen){
-            self.view.frame.origin.y += 150
+            self.view.frame.origin.y += 180
             isKeyboardIsOpen = false
         }
     }
@@ -241,10 +247,34 @@ class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapVie
         
     }
     
+    //-------o go to tinder
+    func goToTinderView(){
+        
+        presentViewController( UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("TinderVIew") as UIViewController, animated: true, completion: nil)
+    }
     
     //-----o get Itinary
     func getItinary(){
-    
+        
+        if let dataUser = Locksmith.loadDataForUserAccount("currentUser") {
+            if let token = dataUser["token"] as? String {
+                
+                let mode = isBike ? "bike" : "foot"
+                let type = isSpeed ? "sport" : "classic"
+        
+                ItinaryModel.getCheckpoints(timeMinute, ll: ll, mode:mode, type:type, token: token){
+            
+                    (isFinished) -> Void in
+            
+                    if(isFinished){
+                        self.goToTinderView()
+                    }
+            
+                }
+            }
+        }
+            
     }
-    
+        
 }
+    

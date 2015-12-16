@@ -20,7 +20,6 @@
 		F96CAF7F1C2188A700B33829 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96CAF7A1C2188A700B33829 /* BackTableVC.swift */; };
 		F99696F51C20F89A00B9C697 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99696F41C20F89A00B9C697 /* TinderViewController.swift */; };
 		F99696F71C20F91500B9C697 /* ZLSwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99696F61C20F91500B9C697 /* ZLSwipeableView.swift */; };
-		F99696F91C20F99E00B9C697 /* ZLSwipeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99696F81C20F99E00B9C697 /* ZLSwipeableViewController.swift */; };
 		F99696FC1C20FACE00B9C697 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99696FA1C20FACE00B9C697 /* CardView.swift */; };
 		F99696FD1C20FACE00B9C697 /* CardContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F99696FB1C20FACE00B9C697 /* CardContentView.xib */; };
 		F9A2959A1C1F2C490027C2F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A295991C1F2C490027C2F7 /* AppDelegate.swift */; };
@@ -32,6 +31,8 @@
 		F9B19C411C219E2D00355BD6 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B19C401C219E2D00355BD6 /* NavigationViewController.swift */; };
 		F9B19C441C21A2AE00355BD6 /* enso.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F9B19C431C21A27800355BD6 /* enso.ttf */; };
 		F9B19C461C21B79F00355BD6 /* ExtensionClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B19C451C21B79F00355BD6 /* ExtensionClass.swift */; };
+		F9B19C481C21D4EB00355BD6 /* ItinaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B19C471C21D4EB00355BD6 /* ItinaryModel.swift */; };
+		F9B19C4A1C22024800355BD6 /* ZLSwipeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B19C491C22024800355BD6 /* ZLSwipeableViewController.swift */; };
 		F9B8A9081C20B86300799442 /* Starter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B8A9071C20B86300799442 /* Starter.storyboard */; };
 		F9E6AD041C1FA8E400825E5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E6AD021C1FA8E400825E5B /* MapViewController.swift */; };
 		F9E6AD0F1C20375300825E5B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E6AD0E1C20375300825E5B /* RegisterViewController.swift */; };
@@ -72,7 +73,6 @@
 		F96CAF7A1C2188A700B33829 /* BackTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 		F99696F41C20F89A00B9C697 /* TinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
 		F99696F61C20F91500B9C697 /* ZLSwipeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwipeableView.swift; sourceTree = "<group>"; };
-		F99696F81C20F99E00B9C697 /* ZLSwipeableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwipeableViewController.swift; sourceTree = "<group>"; };
 		F99696FA1C20FACE00B9C697 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		F99696FB1C20FACE00B9C697 /* CardContentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardContentView.xib; sourceTree = "<group>"; };
 		F9A295961C1F2C490027C2F7 /* Wandr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wandr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +91,8 @@
 		F9B19C401C219E2D00355BD6 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		F9B19C431C21A27800355BD6 /* enso.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = enso.ttf; sourceTree = "<group>"; };
 		F9B19C451C21B79F00355BD6 /* ExtensionClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionClass.swift; sourceTree = "<group>"; };
+		F9B19C471C21D4EB00355BD6 /* ItinaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItinaryModel.swift; sourceTree = "<group>"; };
+		F9B19C491C22024800355BD6 /* ZLSwipeableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwipeableViewController.swift; sourceTree = "<group>"; };
 		F9B8A9071C20B86300799442 /* Starter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Starter.storyboard; sourceTree = "<group>"; };
 		F9E6AD021C1FA8E400825E5B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F9E6AD0E1C20375300825E5B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				F95219B41C2079D600D675EC /* UserModel.swift */,
+				F9B19C471C21D4EB00355BD6 /* ItinaryModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -193,7 +196,7 @@
 		F99696FE1C21001800B9C697 /* ZL */ = {
 			isa = PBXGroup;
 			children = (
-				F99696F81C20F99E00B9C697 /* ZLSwipeableViewController.swift */,
+				F9B19C491C22024800355BD6 /* ZLSwipeableViewController.swift */,
 				F99696F61C20F91500B9C697 /* ZLSwipeableView.swift */,
 			);
 			name = ZL;
@@ -508,14 +511,15 @@
 				F9AB43CF1C20973E00FCDDE8 /* ConfigGlobalProject.swift in Sources */,
 				F9A295A21C1F2C490027C2F7 /* Wandr.xcdatamodeld in Sources */,
 				F9B19C411C219E2D00355BD6 /* NavigationViewController.swift in Sources */,
+				F9B19C4A1C22024800355BD6 /* ZLSwipeableViewController.swift in Sources */,
 				F99696F51C20F89A00B9C697 /* TinderViewController.swift in Sources */,
 				F9B19C461C21B79F00355BD6 /* ExtensionClass.swift in Sources */,
 				F96CAF7F1C2188A700B33829 /* BackTableVC.swift in Sources */,
 				F9E6AD0F1C20375300825E5B /* RegisterViewController.swift in Sources */,
 				F92AB12F1C20E014008D0B5B /* LoginDefaultController.swift in Sources */,
-				F99696F91C20F99E00B9C697 /* ZLSwipeableViewController.swift in Sources */,
 				F96CAF7D1C2188A700B33829 /* FavorisViewController.swift in Sources */,
 				F9A2959A1C1F2C490027C2F7 /* AppDelegate.swift in Sources */,
+				F9B19C481C21D4EB00355BD6 /* ItinaryModel.swift in Sources */,
 				F9E6AD041C1FA8E400825E5B /* MapViewController.swift in Sources */,
 				F92AB1311C20E031008D0B5B /* LoginViewController.swift in Sources */,
 				F96CAF7B1C2188A700B33829 /* ViewController.swift in Sources */,

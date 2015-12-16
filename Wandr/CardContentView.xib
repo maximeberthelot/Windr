@@ -17,29 +17,41 @@
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="yWe-Lu-LeR">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="389"/>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="La Tour Eiffel " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fq6-UH-wjR">
-                    <rect key="frame" x="232" y="408" width="136" height="21"/>
-                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="18"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Porte de Vincennes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFt-Op-k7W" customClass="DesignableLabel" customModule="Spring">
+                    <rect key="frame" x="27" y="447" width="214" height="21"/>
+                    <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="21"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xYM-3m-FPr">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="UFt-Op-k7W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1dR-hh-Stm"/>
                 <constraint firstAttribute="trailing" secondItem="R8b-fg-uGH" secondAttribute="trailing" id="3o1-yK-k8W"/>
-                <constraint firstItem="Fq6-UH-wjR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="W9U-ye-eU0"/>
+                <constraint firstItem="UFt-Op-k7W" firstAttribute="top" secondItem="xYM-3m-FPr" secondAttribute="bottom" constant="100" id="CqC-So-Gql"/>
+                <constraint firstItem="UFt-Op-k7W" firstAttribute="top" secondItem="xYM-3m-FPr" secondAttribute="bottom" constant="40" id="O5P-lV-SEU"/>
+                <constraint firstItem="xYM-3m-FPr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PZx-2k-O59"/>
+                <constraint firstAttribute="trailing" secondItem="xYM-3m-FPr" secondAttribute="trailing" id="VtA-Z6-TZs"/>
                 <constraint firstItem="R8b-fg-uGH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yes-8U-qh1"/>
-                <constraint firstAttribute="bottom" secondItem="Fq6-UH-wjR" secondAttribute="bottom" constant="171" id="bQg-v9-3Vm"/>
+                <constraint firstItem="UFt-Op-k7W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="Yil-SJ-YvF"/>
+                <constraint firstItem="xYM-3m-FPr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c9H-E0-waK"/>
                 <constraint firstAttribute="bottom" secondItem="R8b-fg-uGH" secondAttribute="bottom" id="dmz-fE-Mvp"/>
                 <constraint firstItem="R8b-fg-uGH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mMA-aY-1FI"/>
+                <constraint firstAttribute="bottom" secondItem="UFt-Op-k7W" secondAttribute="bottom" constant="70" id="wn2-PL-H6W"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1dR-hh-Stm"/>
+                    <exclude reference="CqC-So-Gql"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="titleLabel" destination="UFt-Op-k7W" id="QgT-9B-zY7"/>
+            </connections>
             <point key="canvasLocation" x="361" y="343"/>
         </view>
     </objects>
-    <resources>
-        <image name="loading" width="40" height="40"/>
-    </resources>
 </document>
