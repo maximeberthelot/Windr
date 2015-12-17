@@ -34,6 +34,9 @@
 		F9B19C481C21D4EB00355BD6 /* ItinaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B19C471C21D4EB00355BD6 /* ItinaryModel.swift */; };
 		F9B19C4A1C22024800355BD6 /* ZLSwipeableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B19C491C22024800355BD6 /* ZLSwipeableViewController.swift */; };
 		F9B8A9081C20B86300799442 /* Starter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9B8A9071C20B86300799442 /* Starter.storyboard */; };
+		F9E2CEE81C220F1F008ED5E6 /* DraggableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CEE51C220F1F008ED5E6 /* DraggableViewBackground.swift */; };
+		F9E2CEE91C220F1F008ED5E6 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CEE61C220F1F008ED5E6 /* DraggableView.swift */; };
+		F9E2CEEA1C220F1F008ED5E6 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E2CEE71C220F1F008ED5E6 /* OverlayView.swift */; };
 		F9E6AD041C1FA8E400825E5B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E6AD021C1FA8E400825E5B /* MapViewController.swift */; };
 		F9E6AD0F1C20375300825E5B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E6AD0E1C20375300825E5B /* RegisterViewController.swift */; };
 		F9E6AD2E1C2047AE00825E5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9E6AD2D1C2047AE00825E5B /* Assets.xcassets */; };
@@ -94,6 +97,9 @@
 		F9B19C471C21D4EB00355BD6 /* ItinaryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItinaryModel.swift; sourceTree = "<group>"; };
 		F9B19C491C22024800355BD6 /* ZLSwipeableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLSwipeableViewController.swift; sourceTree = "<group>"; };
 		F9B8A9071C20B86300799442 /* Starter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Starter.storyboard; sourceTree = "<group>"; };
+		F9E2CEE51C220F1F008ED5E6 /* DraggableViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableViewBackground.swift; sourceTree = "<group>"; };
+		F9E2CEE61C220F1F008ED5E6 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		F9E2CEE71C220F1F008ED5E6 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		F9E6AD021C1FA8E400825E5B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F9E6AD0E1C20375300825E5B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F9E6AD2D1C2047AE00825E5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Wandr/Assets.xcassets; sourceTree = "<group>"; };
@@ -165,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				F96CAF7A1C2188A700B33829 /* BackTableVC.swift */,
+				F9E2CEE41C220F16008ED5E6 /* TinderView */,
 				F9D6D3371C21923A004585B6 /* Starter */,
 				F9D6D3351C218B74004585B6 /* Burger */,
 				F9D6D3361C219075004585B6 /* Itinary */,
@@ -282,7 +289,6 @@
 			isa = PBXGroup;
 			children = (
 				F99696FA1C20FACE00B9C697 /* CardView.swift */,
-				F99696F41C20F89A00B9C697 /* TinderViewController.swift */,
 				F9E6AD021C1FA8E400825E5B /* MapViewController.swift */,
 			);
 			name = Itinary;
@@ -295,6 +301,17 @@
 				F9E6AD0E1C20375300825E5B /* RegisterViewController.swift */,
 			);
 			name = Starter;
+			sourceTree = "<group>";
+		};
+		F9E2CEE41C220F16008ED5E6 /* TinderView */ = {
+			isa = PBXGroup;
+			children = (
+				F99696F41C20F89A00B9C697 /* TinderViewController.swift */,
+				F9E2CEE51C220F1F008ED5E6 /* DraggableViewBackground.swift */,
+				F9E2CEE61C220F1F008ED5E6 /* DraggableView.swift */,
+				F9E2CEE71C220F1F008ED5E6 /* OverlayView.swift */,
+			);
+			name = TinderView;
 			sourceTree = "<group>";
 		};
 		F9E6AD101C203BA200825E5B /* App */ = {
@@ -503,12 +520,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F99696FC1C20FACE00B9C697 /* CardView.swift in Sources */,
+				F9E2CEE91C220F1F008ED5E6 /* DraggableView.swift in Sources */,
 				F95219B31C206BFA00D675EC /* LoginTextField.swift in Sources */,
+				F9E2CEE81C220F1F008ED5E6 /* DraggableViewBackground.swift in Sources */,
 				F96CAF751C21885E00B33829 /* SWRevealViewController.m in Sources */,
 				F99696F71C20F91500B9C697 /* ZLSwipeableView.swift in Sources */,
 				F96CAF7E1C2188A700B33829 /* ResearchViewController.swift in Sources */,
 				F95219B51C2079D600D675EC /* UserModel.swift in Sources */,
 				F9AB43CF1C20973E00FCDDE8 /* ConfigGlobalProject.swift in Sources */,
+				F9E2CEEA1C220F1F008ED5E6 /* OverlayView.swift in Sources */,
 				F9A295A21C1F2C490027C2F7 /* Wandr.xcdatamodeld in Sources */,
 				F9B19C411C219E2D00355BD6 /* NavigationViewController.swift in Sources */,
 				F9B19C4A1C22024800355BD6 /* ZLSwipeableViewController.swift in Sources */,

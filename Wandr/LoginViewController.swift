@@ -32,9 +32,7 @@ class LoginViewController: LoginDefaultController, FBSDKLoginButtonDelegate{
         
         if((Locksmith.loadDataForUserAccount("currentUser")) != nil){
             
-            try! Locksmith.deleteDataForUserAccount("currentUser")
-            return
-                
+            self.logOut()
             //self.switchView()
             //return
         
@@ -112,6 +110,10 @@ class LoginViewController: LoginDefaultController, FBSDKLoginButtonDelegate{
         self.InputMail.resignFirstResponder()
         self.InputPswd.resignFirstResponder()
         
+    }
+    
+    func logOut(){
+        try! Locksmith.deleteDataForUserAccount("currentUser")
     }
 
     

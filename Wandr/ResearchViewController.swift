@@ -51,10 +51,14 @@ class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapVie
     }
     
     override func viewDidLoad() {
+        
+        //----o empty array
+        keepStep = []
+        
+        
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
         //------o Init Map & set to current locale
-        
         self.locationManager.delegate = self
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
@@ -257,6 +261,7 @@ class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapVie
     func getItinary(){
         
         if let dataUser = Locksmith.loadDataForUserAccount("currentUser") {
+            
             if let token = dataUser["token"] as? String {
                 
                 let mode = isBike ? "bike" : "foot"

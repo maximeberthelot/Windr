@@ -16,5 +16,7 @@ var limitR = 10
 var radiusMap = []
 var checkpointsData = []
 var cardCounter = 0
+var keepStep = NSMutableArray()
+var currentIndex = 0
 
     

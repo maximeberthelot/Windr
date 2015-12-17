@@ -52,7 +52,6 @@ class LoginDefaultController: UIViewController {
     
     func switchView(){
         
-        print("switch")
         presentViewController( UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Default") as UIViewController, animated: true, completion: nil)
         
         

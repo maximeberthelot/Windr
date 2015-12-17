@@ -9,21 +9,30 @@
 import UIKit
 import ReactiveUI
 
-class TinderViewController: ZLSwipeableViewController {
+class TinderViewController: UIViewController {
     
     var shouldSwipe = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let defaultHandler = swipeableView.shouldSwipeView
-        swipeableView.shouldSwipeView = {(view: UIView, movement: Movement, swipeableView: ZLSwipeableView) in
-            self.shouldSwipe && defaultHandler(view: view, movement: movement, swipeableView: swipeableView)
-        }
+        let draggableBackground: DraggableViewBackground = DraggableViewBackground(frame: self.view.frame)
+        draggableBackground.backLabel.addTarget(self, action: "pressed:", forControlEvents: UIControlEvents.TouchUpInside)
+        
+        self.view.addSubview(draggableBackground)
     }
     
     override func viewDidAppear(animated: Bool) {
-        print(checkpointsData[0])
+        
+        
+    }
+    
+    //------o Back to choose view
+    func pressed(sender: UIButton!) {
+        
+        presentViewController( UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("Default") as UIViewController, animated: true, completion: nil)
+        
+
     }
     
 }

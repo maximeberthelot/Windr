@@ -12,7 +12,6 @@ import UIKit
 
 class ItinaryModel {
     
-    
     //----o get Checkpoints
     class func getCheckpoints(time: Int,ll: String, mode:String, type:String, token: String,completion: (isFinished: Bool) -> Void) -> Void{
         
@@ -23,10 +22,27 @@ class ItinaryModel {
                 
                 if let data = response.result.value!["data"] as? NSObject {
                     
-                    completion(isFinished: true)
-                    
                     checkpointsData = data as! NSArray
                     
+                    let dictionaryUser = Locksmith.loadDataForUserAccount("currentUser")
+                    
+                    //----o Save & Secure data info on DataCore
+                    if((dictionaryUser) != nil){
+                        print("update")
+                        try! Locksmith.updateData(["checkpoints": checkpointsData, "token": token], forUserAccount: "currentUser")
+                        
+                    }
+                    else{
+                        
+                        try! Locksmith.saveData(["checkpoints": checkpointsData, "token": token], forUserAccount: "currentUser")
+                        
+                        
+                    }
+                    
+                    
+                    completion(isFinished: true)
+
+
                 }
                 else{
                   print(response.result)
@@ -34,6 +50,5 @@ class ItinaryModel {
                 
         }
     }
-    
     
 }
