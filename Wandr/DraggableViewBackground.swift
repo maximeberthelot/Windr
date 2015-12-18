@@ -32,6 +32,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
     var goBtn: UIButton!
     var imageCard: UIImage!
     var dataURLImg = NSData()
+    var indexHistoric = 0
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -44,7 +45,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         self.setupView()
         
         //----o Take data from API
-        if let dictionaryUser = Locksmith.loadDataForUserAccount("currentUser") {
+        if let dictionaryUser = Locksmith.loadDataForUserAccount("checkpoints") {
             if let checkpointsData = dictionaryUser["checkpoints"] as? NSArray {
                 cardsData = checkpointsData
             }
@@ -114,13 +115,6 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         self.addSubview(goBtn)
     }
     
-    func pressed(sender: UIButton!) {
-        
-        
-        print("back")
-        
-        
-    }
     
     func createDraggableViewWithDataAtIndex(index: NSInteger) -> DraggableView {
         let draggableView = DraggableView(frame: CGRectMake((self.frame.size.width - CARD_WIDTH)/2, (self.frame.size.height - CARD_HEIGHT)/2, CARD_WIDTH, CARD_HEIGHT))
@@ -141,7 +135,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
                         //-----o addGrad
                         draggableView.imageGrad = UIImage(named: "grad")
                         draggableView.imageGradView = UIImageView(image: draggableView.imageGrad!)
-                        draggableView.imageGradView!.frame = CGRectMake(0,150,draggableView.frame.size.width,250)
+                        draggableView.imageGradView!.frame = CGRectMake(0,200,draggableView.frame.size.width,270)
                         
                         
                         //-----o add Grad+ Img
@@ -154,19 +148,33 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
                 
             }
             
+            var imgName = "3stars"
             
             if let rating = cardData.valueForKey("rating") as? Int{
                 
-                print(rating)
                 
-                //-----o addCheckImage
-                draggableView.imageCheck = UIImage(named: "1stars")
-                draggableView.imgCheckView = UIImageView(image: draggableView.imageCheck!)
-                draggableView.imgCheckView!.frame = CGRectMake(20,draggableView.frame.size.height - 60,91.5,14)
                 
-                draggableView.addSubview(draggableView.imgCheckView)
+                if(rating > 8){
+                    imgName = "5stars"
+                }
+                
+                if(rating > 4){
+                    imgName = rating > 6 ? "4stars" : "3stars"
+                }
+                else{
+                    imgName = rating > 2 ? "2stars" : "1stars"
+                
+                }
 
             }
+            
+            //-----o addCheckImage
+            draggableView.imageCheck = UIImage(named: imgName)
+            draggableView.imgCheckView = UIImageView(image: draggableView.imageCheck!)
+            draggableView.imgCheckView!.frame = CGRectMake(20,draggableView.frame.size.height - 60,91.5,14)
+            
+            draggableView.addSubview(draggableView.imgCheckView)
+            
         }
         
         
@@ -226,11 +234,7 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         loadedCards.removeAtIndex(0)
         currentIndex = currentIndex + 1
         
-        if cardsLoadedIndex < allCards.count {
-            loadedCards.append(allCards[cardsLoadedIndex])
-            cardsLoadedIndex = cardsLoadedIndex + 1
-            self.insertSubview(loadedCards[MAX_BUFFER_SIZE - 1], belowSubview: loadedCards[MAX_BUFFER_SIZE - 2])
-        }
+        cardsAreDone()
     }
     
     func cardSwipedRight(card: UIView) -> Void {
@@ -238,18 +242,33 @@ class DraggableViewBackground: UIView, DraggableViewDelegate {
         pushToKeepStep()
         currentIndex = currentIndex + 1
         
+        cardsAreDone()
+    }
+    
+    func cardsAreDone(){
+    
         if cardsLoadedIndex < allCards.count {
+            
             loadedCards.append(allCards[cardsLoadedIndex])
             cardsLoadedIndex = cardsLoadedIndex + 1
             self.insertSubview(loadedCards[MAX_BUFFER_SIZE - 1], belowSubview: loadedCards[MAX_BUFFER_SIZE - 2])
+            
         }
+        
+        if(allCards.count <= currentIndex){
+            
+            goBtn = UIButton(frame: CGRectMake(self.frame.size.width/2 - 100, self.frame.size.height - 60, 200, 50))
+            goBtn.setTitle("Go", forState: UIControlState.Normal)
+            
+        }
+    
     }
     
     func pushToKeepStep(){
         
-        keepStep.addObject(cardsData[currentIndex])
-        print(keepStep)
-        
+        let fqID = cardsData[currentIndex].valueForKey("fs_id") as! String
+        keepStep.append(fqID)
+
     }
     
     

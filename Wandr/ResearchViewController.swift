@@ -15,7 +15,7 @@ class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapVie
     @IBOutlet var timeTextField: UITextField!
     
     var isKeyboardIsOpen = false
-    var timeMinute = 15
+    var timeMinute = 45
     var isBike = true
     var isSpeed = false
     var isFinished = true
@@ -69,7 +69,7 @@ class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapVie
         
         //----o Set default textField & UIPickerView
         self.timeTextField.delegate = self
-        timeTextField.text = pickerDataSource[0]
+        timeTextField.text = pickerDataSource[2]
         
         self.setStylePickerView()
         
@@ -88,6 +88,14 @@ class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapVie
         //----o Init with default el
         self.switchBtnColorFoot()
         self.switchBtnColorSpeed()
+        
+        //----o purge itinary
+        if((Locksmith.loadDataForUserAccount("itinary")) != nil && (Locksmith.loadDataForUserAccount("choose")) != nil){
+            
+            try! Locksmith.deleteDataForUserAccount("itinary")
+            try! Locksmith.deleteDataForUserAccount("choose")
+            
+        }
         
     }
     
@@ -244,7 +252,6 @@ class ResearchViewController : UIViewController,UIPickerViewDataSource, MKMapVie
     }
     
     //----o set TextField
-    
     func dismessKeyboard(){
         
         timeTextField.resignFirstResponder()

@@ -29,3 +29,12 @@ extension UIView {
             ).instantiateWithOwner(nil, options: nil)[0] as? UIView
     }
 }
+
+extension String {
+    var isValidPassword: Bool {
+        if characters.count < 8 { return false }
+        if rangeOfCharacterFromSet(.letterCharacterSet(), options: .LiteralSearch, range: nil) == nil { return false }
+        if rangeOfCharacterFromSet(.decimalDigitCharacterSet(), options: .LiteralSearch, range: nil) == nil { return false }
+        return true
+    }
+}

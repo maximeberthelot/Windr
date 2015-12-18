@@ -10,7 +10,7 @@ import Foundation
 class FavorisViewController : UIViewController {
     
     override func viewDidLoad() {
-        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+      self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     
 }

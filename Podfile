@@ -25,10 +25,6 @@ target 'Wandr' do
     pod 'Locksmith'
     
     #----o Tinder Gesture
-    pod 'ZLSwipeableViewSwift'
-    pod 'performSelector-swift'
-    pod 'UIColor+FlatColors'
-    pod 'Cartography'
     pod 'ReactiveUI'
 
 end

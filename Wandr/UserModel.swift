@@ -17,37 +17,59 @@ class UserModel {
         
         Alamofire.request(.POST, APIURL + "login", parameters: ["email": mail, "password" : pswd])
             .responseJSON { response in
-            
-                if let tokenObject = response.result.value!["token"] as? NSObject {
-                    
-                    completion(isFinished: true)
-                    saveData(tokenObject as! String, mail: mail)
-                    
+                
+                let status = response.result.value!.valueForKey("status") as! Int
+                
+                if (status == 200){
+                    if let dataObject = response.result.value!["data"] as? NSObject {
+                        
+                        let token = dataObject.valueForKey("token") as! String
+                        
+                        completion(isFinished: true)
+                        saveData(token, mail: mail)
+                        
+                    }
+                    else{
+                        completion(isFinished: false)
+                        print("Request failed with error")
+                    }
+
                 }
                 else{
+                    
+                    completion(isFinished: false)
                     print("Request failed with error")
+
                 }
-            
         }
     }
     
     //----o Register user to API -> status
     class func register(mail : String,pswd: String,name:String, completion: (isFinished: Bool) -> Void) -> Void{
-        
         Alamofire.request(.POST, APIURL + "register", parameters: ["email": mail, "password" : pswd, "name": name])
             .responseJSON { response in
                 
-                if let status = response.result.value!["status"] as? NSObject {
-                    
-                    completion(isFinished: true)
-                    
-                    if(status == 200){
-                       // saveData(tokenObject as! String, mail: mail)
+                let status = response.result.value!.valueForKey("status") as! Int
+                
+                if (status == 200){
+                    if let dataObject = response.result.value!["data"] as? NSObject {
+                        
+                        let token = dataObject.valueForKey("token") as! String
+                        
+                        completion(isFinished: true)
+                        saveData(token, mail: mail)
+                        
+                    }
+                    else{
+                        print("Request failed with error")
                     }
                     
                 }
                 else{
-                    print("Request failed with error")
+                    
+                    completion(isFinished: false)
+                    print("Request failed with error status")
+                    
                 }
                 
         }

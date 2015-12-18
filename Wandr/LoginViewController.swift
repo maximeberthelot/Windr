@@ -11,7 +11,7 @@ import Locksmith
 import FBSDKCoreKit
 import FBSDKLoginKit
 
-class LoginViewController: LoginDefaultController, FBSDKLoginButtonDelegate{
+class LoginViewController: LoginDefaultController, FBSDKLoginButtonDelegate, UITextFieldDelegate{
     
     @IBOutlet var InputMail: LoginTextField!
     @IBOutlet var InputPswd: LoginTextField!
@@ -44,6 +44,11 @@ class LoginViewController: LoginDefaultController, FBSDKLoginButtonDelegate{
         else{
             self.switchView()
         }
+        
+        //------o Return Textfield
+        InputMail.delegate = self
+        InputPswd.delegate = self
+        
     }
     
     //-----o Config FB & methode
@@ -60,6 +65,14 @@ class LoginViewController: LoginDefaultController, FBSDKLoginButtonDelegate{
         
         self.view.addSubview(loginButton)
     
+    }
+    
+    func errorView(){
+        
+        let alert = UIAlertController(title: "Ops...!", message: "Une erreur c'est produite lors de votre authentification. Mail ou mot de passe invalide. :(", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
     }
     
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!){
@@ -95,11 +108,32 @@ class LoginViewController: LoginDefaultController, FBSDKLoginButtonDelegate{
             
         }
         
+        var message = ""
+        
+        if (!self.validate(InputMail.text!) || InputMail.text!.isEmpty) {
+            
+            message = InputMail.text!.isEmpty ? "Vous n'avez pas renseigné votre adresse mail" : "Adresse mail non valide"
+            errorRegister(message)
+            return
+            
+        }
+        
+        if(InputPswd.text!.characters.count >= 8 || InputPswd.text!.isValidPassword ){
+            
+            message = InputPswd.text!.isEmpty ? "Vous n'avez pas renseigné votre mot de passe" : "Votre mot de passe doit contenir plus de 8 caractères et doit être composé uniquement de chiffre et/ou de lettre"
+            errorRegister(message)
+            return
+            
+        }
+        
         UserModel.login(InputMail.text!, pswd: InputPswd.text!) {
             (isFinished) -> Void in
             
             if(isFinished){
                 self.switchView()
+            }
+            else{
+                self.errorView()
             }
             
         }
@@ -112,8 +146,29 @@ class LoginViewController: LoginDefaultController, FBSDKLoginButtonDelegate{
         
     }
     
+    override func textFieldShouldReturn(_: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
     func logOut(){
         try! Locksmith.deleteDataForUserAccount("currentUser")
+    }
+    
+    //-----o Error
+    
+    func errorRegister(message: String){
+        
+        let alert = UIAlertController(title: "Vous ne pouvez pas vous connecter", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "J'ai compris", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
+    func validate(YourEMailAddress: String) -> Bool {
+        let REGEX: String
+        REGEX = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,6}"
+        return NSPredicate(format: "SELF MATCHES %@", REGEX).evaluateWithObject(YourEMailAddress)
     }
 
     
